@@ -111,9 +111,7 @@ var convertToColour = function(temperature) {
 }
 
 var updateDiv = function(red, green, blue, alpha, spectrum) {
-	console.log(red);
-	console.log(green);
-	console.log(blue);
+
 	outputDiv.style.backgroundColor = "rgba(" + Math.round(red) +", " + Math.round(green) +", " + Math.round(blue) +", " + alpha + ")";
 
 	if (containsSubstring(spectrum, "UV") || containsSubstring(spectrum, "IR")) {
@@ -137,7 +135,7 @@ var getRGB = function (wavelength) {
 	
   
   if (wavelength >= 380 && wavelength <= 439) {
-  	console.log("380 439");
+  	
     red   = -(wavelength - 440) / (440 - 380);
     green = 0.0;
     blue = 1.0;
@@ -205,7 +203,7 @@ var getRGB = function (wavelength) {
   green *= 255;
   blue *= 255;
 
-  console.log(red + " " + green + " " + " " + blue);
+  
   return {
   	red: red,
   	green: green,

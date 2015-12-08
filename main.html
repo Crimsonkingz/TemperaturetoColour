@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Colours</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<div id="container">
+	<div id="outputColour"></div>
+	<form>
+		<label for="inputTemp">Input Temperature</label>
+		<input id="inputTemp" type="number" min=0>
+
+	  	<input type="radio" name="unit" value="CELSIUS">Celsius
+	  	
+	  	<input type="radio" name="unit" value="KELVIN">Kelvin
+	  	<br>
+	  	<button type="button" id="submitTemp">Get Temperature Colour</button>
+	</form>
+	<p>Peak Wavelength:</p>
+	<div id="outputWavelength"></div>
+</div>
+
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
